@@ -1,0 +1,116 @@
+/* src/components/Education/Education.module.css */
+
+@import "../../vars.css";
+
+.container {
+  margin: 80px 10%;
+  color: var(--color-text);
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  position: relative;
+  background: rgba(30, 58, 138, 0.6); /* Semi-transparent */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 24px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Light Sweep Animation */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: left 0.5s ease-in-out;
+  pointer-events: none;
+}
+
+/* Subtle glowing border on hover */
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(120deg, #4facfe, #00f2fe);
+  background-size: 200% 200%;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.4s ease;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover::before {
+  left: 125%;
+}
+
+.card:hover::after {
+  opacity: 1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+
+.institute {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.period {
+  font-size: 16px;
+  color: #e0e0e0;
+}
+  
+
+.degree {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin-bottom: 8px;
+}
+
+.detail {
+  display: inline-block;
+  font-size: 16px;
+  color: #ccc;
+}

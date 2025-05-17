@@ -1,0 +1,257 @@
+.title {
+  color: var(--color-primary-light);
+  font-size: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.aboutItem {
+  background: rgba(12, 12, 12, 0.6);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.aboutItem:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.projectImage {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+/* Specific Planify Image Cropping */
+.planifyImage {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center; /* Focus on center content */
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.planifyImage:hover {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.centeredDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #eaeaea; 
+  max-width: 450px;
+  margin: 0 auto 15px;
+}
+
+.moreInfo {
+  font-style: italic;
+  font-size: 15px;
+  color: #a0a0a0;
+  margin-top: 10px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+}
+
+.button {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+@media screen and (max-width: 830px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .aboutItem {
+    flex: 1 1 100%;
+  }
+}
+.title {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutItem h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.centeredDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.moreInfo {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+}
+
+.container {
+  background-color: #04152d;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 50px;
+}
+
+.buttonGroup {
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+.centeredDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7); /* light white */
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.moreInfo {
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7); /* light white */
+  margin-top: 8px;
+  text-align: center;
+}
+.button {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 
+    background-color 0.3s ease, 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 86, 179, 0.6);
+}
+.aboutItem {
+  background: rgba(4, 21, 45, 0.8); /* Dark blue translucent */
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.aboutItem:hover {
+  transform: scale(1.04);
+  box-shadow: 0 12px 30px rgba(0, 86, 179, 0.6);
+  background-color: rgba(4, 21, 45, 1); /* Slightly more solid */
+}
+@media screen and (max-width: 768px) {
+  .projectImage,
+  .planifyImage {
+    height: 100px; /* reduce height */
+    border-radius: 12px;
+  }
+}
+.projectImage,
+.planifyImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  background-color: #000; /* optional: fills empty space */
+  padding: 10px;           /* optional: adds spacing around image */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .projectImage,
+  .planifyImage {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectImage,
+  .planifyImage {
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectImage,
+  .planifyImage {
+    max-height: 150px;
+  }
+}
+
