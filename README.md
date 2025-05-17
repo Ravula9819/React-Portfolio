@@ -1,12 +1,37 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website, built using React. This portfolio showcases my skills, projects, and background as an aspiring web developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## Expanding the ESLint configuration
+This portfolio features a clean, modern, and responsive design with smooth animations and easy navigation. It includes sections for about me, skills, projects, contact information, and social media links.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Responsive layout optimized for desktop and mobile devices  
+- Smooth scrolling and animated components  
+- Showcases projects with links to GitHub repositories and live demos
+- Showcase certificates
+- Contact form integrated for easy communication  
+- Social media links including LinkedIn and GitHub  
+- Built with React functional components and hooks  
+
+## Technologies Used
+
+- React.js  
+- CSS (custom styling)  
+- Vite
+
+## Deployment
+This project is deployed on Netlify and accessible at:
+https://ravulanamratha-portfolio.netlify.app/
+
+## Contact
+LinkedIn: Namratha Ravula
+
+GitHub: ravulanamratha98
+
+Email: ravulanamratha98@gmail.com
+
+Feel free to reach out for collaborations, feedback, or opportunities!
